@@ -1,16 +1,6 @@
 def shortestSubstring(s):
     # Write your code here
-    unique_letters = set(s)
-    uniqueQty = len(unique_letters)
-    # The number of window positions for the smallest window that consist only of unique letters
-    maxWindowPositions = len(s) - len(unique_letters) + 1
-
-    for windowSizeStep in range(maxWindowPositions):
-        # Each iteration the number of available positions (i) decreases in accordance with the growing size of the windowSizeStep
-        for i in range(maxWindowPositions - windowSizeStep):
-            window = s[i : i + uniqueQty + windowSizeStep]
-            if set(window) == unique_letters:
-                return len(window)
+    pass
 
 
 EXAMPLE_TEST_CASES = [
